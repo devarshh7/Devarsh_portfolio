@@ -240,24 +240,28 @@ img {
 
 /* ===== ABOUT =====*/
 .about__container {
-  row-gap: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
-.about__img {
-                    <div class="about__img" style="margin-left: 100px;">
-   		    <img src="assets/img/about.jpg" alt="">
-		    </div>
+.about__container .about__img {
+  margin: 0; /* Remove any default margin */
 }
+
 .about__img img {
-  width: 200px;
+  width: 300px;
+  height: auto;
   border-radius: 0.5rem;
-                    <div class="about__img" style="margin-left: 100px;">
-   		    <img src="assets/img/about.jpg" alt="">
-		    </div>
 }
+
+.about__text {
+  max-width: 700px; /* Adjust the maximum width as needed */
+}
+		    </div>
 
 /* ===== SKILLS =====*/
 
